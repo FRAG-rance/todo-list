@@ -1,31 +1,33 @@
-const Item = (title, description, prio) => {
-    this.title = title;
-    this.description = description;
-    this.prio = prio;
+export default class Item {
+    constructor(title, description, prio) {
+        this.title = title;
+        this.description = description;
+        this.prio = prio;
+    }
+    
 
-    const setTitle = (title) => {
+    setTitle = (title) => {
         this.title = title;
     }
 
-    const setDescription = (description) => {
+    setDescription = (description) => {
         this.description = description;
     }
 
-    const setPrio = (prio) => {
+    setPrio = (prio) => {
         this.prio = prio;
     }    
 
-    const getTitle = () => {
+    getTitle = () => {
         return this.title;
     }
 
-    const getDescription = () => {
+    getDescription = () => {
         return this.description;
     }
 
-    const getPrio = () => { 
+    getPrio = () => { 
         return this.prio;
     }
 };
 
-export { Item };

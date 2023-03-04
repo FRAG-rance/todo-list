@@ -34,3 +34,9 @@ svg {
     width: 1.5rem;
     height: 1.5rem
 }
+
+#project-preview {
+    width:  1000px;
+    margin: 0 100px;
+    padding-top: 50px; 
+}
