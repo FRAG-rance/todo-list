@@ -40,3 +40,7 @@ svg {
     margin: 0 100px;
     padding-top: 50px; 
 }
+
+#add-task-popup { 
+    display: none;
+}

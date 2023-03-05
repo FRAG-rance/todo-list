@@ -6,4 +6,5 @@ import List from './todoList.js'
 console.log("debug1");
 
 UI.loadProjectPreview();
+UI.taskPopup();
 
