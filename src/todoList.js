@@ -1,28 +1,30 @@
-import Item from './todoItems.js'; 
-import Project from './project.js';
+import Item from './todoItems.js';
 
-export default class List  {
-    constructor(List) {
-        this.List = [];
-        this.List.push(Project("ALL"));
-        this.List.push(Project("TODAY"));
-        this.List.push(Project("PLANNED"));
+export default class Project {
+    constructor(name, projectName){
+        this.name = name;
+        this.projectName = [];
     }
     
+    setName = (newName) => {
+        this.name = newName;
+    }
 
-    getList = () => {
-        return this.List;
+    setprojectName = (tasks) => {
+        this.tasks = tasks;
+    }
+
+    getName = () => {
+        return this.name;
     } 
 
-    setList = (List) => { 
-        this.List = List;
+    getprojectName = () => { 
+        return this.tasks;
     }
 
-    addList = (newProject) =>
-    {
-        if(this.List.find((project) => project.name == newProject.name)) return;
-        this.List.push(newProject);
-    }
-
+    addTask = (newTask) => {
+        if(this.projectName.find((task) => task.getTitle() == newTask.name)) return;
+        this.projectName.push(newTask);
+    } 
 }
 

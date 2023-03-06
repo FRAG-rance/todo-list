@@ -1,4 +1,4 @@
-import Project from './project.js'
+import Project from './todoList.js'
 import Item from './todoItems.js'
 
 export default class UI {
@@ -28,7 +28,7 @@ export default class UI {
                 class="button-cancel-task-popup"
                 id="button-cancel-task-popup"
             >
-                Cancel
+                Cancels
             </button>
             </div>
         </div>`
